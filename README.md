@@ -79,6 +79,7 @@ embedding_model_path = ''     # The model used to calculate Alignment-Score, def
 ```
 Finally, the evaluation result will be saved in a JSONL file and the final scores will be printed in stdout, or you can run `./scores.py` with evaluation result file as input to get the final scores.
 
+## ✒️Citation
 
 ## 📄 License
 ![](https://img.shields.io/badge/Code%20License-Apache%202.0-green) ![](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red)
