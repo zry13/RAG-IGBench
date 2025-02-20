@@ -3,6 +3,7 @@ In real-world scenarios, providing user queries with visually enhanced responses
 Therefore, we present **RAG-IGBench**, a thorough benchmark designed specifically to evaluate the task of **Interleaved Generation** based on **Retrieval-Augmented Generation** (RAG-IG) in open-domain question answering.
 
 ![](assets/case example.jpg)
+
 ![](assets/overview.jpg)
 
 
