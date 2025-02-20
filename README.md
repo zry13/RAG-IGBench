@@ -78,3 +78,9 @@ clip_model_path = ''          # The model used to calculate Clip-Score, default 
 embedding_model_path = ''     # The model used to calculate Alignment-Score, default as Conan-embedding
 ```
 Finally, the evaluation result will be saved in a JSONL file and the final scores will be printed in stdout, or you can run `./scores.py` with evaluation result file as input to get the final scores.
+
+
+## 📄 License
+![](https://img.shields.io/badge/Code%20License-Apache%202.0-green) ![](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red)
+
+Usage and License Notices: The data and code are intended and licensed for research use only. License: Attribution-NonCommercial 4.0 International It should abide by the policy of OpenAI: https://openai.com/policies/terms-of-use
