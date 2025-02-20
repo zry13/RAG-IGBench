@@ -6,17 +6,19 @@ In real-world scenarios, providing user queries with visually enhanced responses
 
 Therefore, we present **RAG-IGBench**, a thorough benchmark designed specifically to evaluate the task of **Interleaved Generation** based on **Retrieval-Augmented Generation** (RAG-IG) in open-domain question answering.
 
-<div align=center>![](assets/case_example.jpg)
 
-<div align=center>![](assets/overview.jpg)
+![](assets/case_example.jpg)
+
+![](assets/overview.jpg)
 
 The two figures above illustrate the RAG-IG pipeline and a representative portion of our experimental results. Specifically, we input the query along with retrieved documents and images into the MLLMs. Through detailed instructions, the MLLMs generate answers in markdown format, incorporating appropriate image indices. Subsequently, we replace these image indices with the corresponding images to produce the final output: a coherent answer where text and images are seamlessly interleaved.
 
 To comprehensively evaluate diverse MLLMs on RAG-IG, we use metrics of three dimensions: text quality, image quality, and image-text consistency. The details of our innovative metrics can be found in our paper.
 
 The following two figures show the statistics of our RAG-IGBench:
-<div align=center>![](assets/stat_table.jpg)
-<div align=center>![](assets/stat_figure.jpg)
+<div align=center><img src="assets/stat_table.jpg"></div>
+
+![](assets/stat_figure.jpg)
 
 ## 📚 Setup
 We have hosted the RAG-IGBench dataset on Huggingface, where you should request access on this page first and will be automatically approved. The format of `data.json` is:
