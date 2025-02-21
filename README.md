@@ -22,7 +22,7 @@ The following two figures show the statistics of our RAG-IGBench:
 
 
 ## 📚 Setup
-We have hosted the RAG-IGBench dataset on Huggingface, where you should request access on this page first and will be automatically approved. The format of `data.json` is:
+We have hosted the RAG-IGBench dataset on Huggingface. The format of `data.json` is:
 ```
 [
     {
