@@ -1,6 +1,6 @@
 # RAG-IGBench: Innovative Evaluation for RAG-based Interleaved Generation in Open-domain Question Answering
 
-📖[Paper]() | 🤗[Huggingface]()
+📖[Paper]() | 🤗[Huggingface](https://huggingface.co/datasets/Muyi13/RAG-IGBench)
 
 In real-world scenarios, providing user queries with visually enhanced responses can considerably benefit understanding and memory, underscoring the great value of interleaved image-text generation. 
 
