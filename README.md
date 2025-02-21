@@ -53,11 +53,11 @@ INPUT_DIR
     |images
         |1                              # images folder for query 1
             |1                              # images folder for doc#1
-                |IMG#1.jpg
-                |IMG#2.jpg
+                |id/1/IMG#1.jpg
+                |id/1/IMG#2.jpg
                 |...
             |2                              # images folder for doc#2
-                |IMG#x.jpg
+                |id/2/IMG#x.jpg
                 |...
             |3                              # images folder for doc#3
         |2                              # images folder for query 2
