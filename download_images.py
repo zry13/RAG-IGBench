@@ -5,7 +5,6 @@ import os
 import argparse
 
 def download_image(url, save_path):
-    # 发送HTTP GET请求获取图片内容
     response = requests.get(url)
     
     retry = 10
