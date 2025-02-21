@@ -34,8 +34,8 @@ We have hosted the RAG-IGBench dataset on Huggingface. The format of `data.json`
             ...
         ],
         "images":[
-            [IMG#1, IMG#2, ...],     # images of doc#1
-            [IMG#x, IMG#x+1, ...],      # images of doc#2
+            [id/1/IMG#1, id/1/IMG#2, ...],     # images of doc#1
+            [id/2/IMG#x, id/2/IMG#x+1, ...],      # images of doc#2
             ...
         ],
         "gt_answer": "answer str",
@@ -53,11 +53,11 @@ INPUT_DIR
     |images
         |1                              # images folder for query 1
             |1                              # images folder for doc#1
-                |id/1/IMG#1.jpg
-                |id/1/IMG#2.jpg
+                |IMG#1.jpg
+                |IMG#2.jpg
                 |...
             |2                              # images folder for doc#2
-                |id/2/IMG#x.jpg
+                |IMG#x.jpg
                 |...
             |3                              # images folder for doc#3
         |2                              # images folder for query 2
