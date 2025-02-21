@@ -46,7 +46,7 @@ We have hosted the RAG-IGBench dataset on Huggingface. The format of `data.json`
     }
 ]
 ```
-You can download the `images.zip` to get all images. The images file structure is :
+You can download the `images.tar.gz` to get all images. The images file structure is :
 ```
 INPUT_DIR
     |INPUT_FILE(data.json)
