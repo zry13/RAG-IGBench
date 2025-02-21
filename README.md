@@ -46,7 +46,7 @@ We have hosted the RAG-IGBench dataset on Huggingface. The format of each line i
     }
 ]
 ```
-You can download the `images.tar.gz` to get all images. The images file structure is :
+Run the script `download.py' to get all the images. The images folder structure is:
 ```
 INPUT_DIR
     |INPUT_FILE(data.json)
