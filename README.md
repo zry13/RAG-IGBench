@@ -12,7 +12,7 @@ Therefore, we present **RAG-IGBench**, a thorough benchmark designed specificall
 
 The two figures above illustrate the RAG-IG pipeline and a representative portion of our experimental results. Specifically, we input the query along with retrieved documents and images into the MLLMs. Through detailed instructions, the MLLMs generate answers in markdown format, incorporating appropriate image indices. Subsequently, we replace these image indices with the corresponding images to produce the final output: a coherent answer where text and images are seamlessly interleaved.
 
-To comprehensively evaluate diverse MLLMs on RAG-IG, we use metrics of three dimensions: text quality, image quality, and image-text consistency. The details of our innovative metrics can be found in our paper.
+To comprehensively evaluate diverse MLLMs on RAG-IG, we use metrics of three dimensions: text quality, image quality, and image-text consistency. We use ROUGE-1 for text quality evaluation, modified Edit Distance and Kendall Score for image quality evaluation, and CLIP Score and Alignment Score for image-text consistency evaluation. The details of our innovative metrics can be found in our paper.
 
 The following two figures show the statistics of our RAG-IGBench:
 
