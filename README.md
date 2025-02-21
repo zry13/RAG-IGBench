@@ -70,14 +70,14 @@ INPUT_DIR
 ### Answer generation
 We have to modify the inference code for various models to support interleaved multi-images inputs. We have prepared some testing scripts for currently available open-source and closed-source models in the `./model_generation` folder. The models we support now include **GPT4o**, **Claude**, **Gemini**, **LLaVa-OV**, **InternVL2.5**, **Qwen2/2.5VL**, **NVLM_D** and **Deepseekvl2**. For the evaluation of these models, you only need to modify the model's path and the path to RAG-IGbench's dataset to generate answers. The test result will be saved in a JSONL file.
 ### Evaluation
-Use the `./eval.py` script to score the model's responses. What you need to provide is:
+Use the `./score/eval.py` script to score the model's responses. What you need to provide is:
 ```
 output_file = ''              # Save the evaluation result
 input_file = ''               # Model answer file
 clip_model_path = ''          # The model used to calculate Clip-Score, default as CLIP-ViT-Large-Patch14 from OpenAi
 embedding_model_path = ''     # The model used to calculate Alignment-Score, default as Conan-embedding
 ```
-Finally, the evaluation result will be saved in a JSONL file and the final scores will be printed in stdout, or you can run `./scores.py` with evaluation result file as input to get the final scores.
+Finally, the evaluation result will be saved in a JSONL file and the final scores will be printed in stdout, or you can run `./score/scores.py` with evaluation result file as input to get the final scores.
 
 ## ✒️Citation
 
