@@ -2,9 +2,9 @@
 
 📖[Paper]() | 🤗[Huggingface]()
 
-In real-world scenarios, providing user queries with visually enhanced responses can considerably benefit understanding and memory, underscoring the great value of interleaved image-text generation. Despite recent progress like the visual autoregressive model which unifies both text and image processing in single transformer architecture, generating high-quality interleaved content remains challenging. Moreover, evaluations of these interleaved sequences largely remain underexplored, with existing benchmarks often limited by unimodal metrics that inadequately assess the intricacies of combined image-text outputs. 
+In real-world scenarios, providing user queries with visually enhanced responses can considerably benefit understanding and memory, underscoring the great value of interleaved image-text generation. 
 
-Therefore, we present **RAG-IGBench**, a thorough benchmark designed specifically to evaluate the task of **Interleaved Generation** based on **Retrieval-Augmented Generation** (RAG-IG) in open-domain question answering.
+Therefore, we present **Interleaved Generation** based on **Retrieval-Augmented Generation** (RAG-IG) and the corresponding **RAG-IGBench**, a thorough benchmark designed specifically to evaluate the task. By integrating MLLMs with the RAG paradigm, we achieve high-quality and semantically coherent image-text interleaved generation.
 
 <div align=center><img src="assets/case_example.jpg"></div>
 
