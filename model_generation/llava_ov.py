@@ -95,7 +95,7 @@ def main():
 def parse_arguments():
     parse = argparse.ArgumentParser(description='Generation setting of gpt4o.')
     parse.add_argument('--input_file', type=str, help='The data.json of RAG-IG.', default='./data.json')
-    parse.add_argument('--output_dir', type=str, help='The path for generation result. It should be a .jsonl file.', default='./gpt4o_answer.jsonl')
+    parse.add_argument('--output_dir', type=str, help='The path for generation result. It should be a .jsonl file.', default='./llava_ov__answer.jsonl')
     parse.add_argument('--tensor_parallel_size', type=str, help='Argument of vllm', default=8)
     parse.add_argument('--model_path', type=str, help='The path of Llava-OV / NVLM_D model.')
 
