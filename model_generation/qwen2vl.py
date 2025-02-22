@@ -34,9 +34,9 @@ def get_content(query, documents, images):
     img_list = []
     num = 0
 
-    for i, note in enumerate(images):
+    for i, imgs in enumerate(images):
         urls = []
-        for j, image_url in enumerate(note['imgList']):
+        for j, image_url in enumerate(imgs):
             num += 1
             urls.append(f"(IMG#{num}) <img>{image_url}</img>\n")
         img_list.append(urls)
