@@ -116,7 +116,7 @@ def main(args):
 def parse_arguments():
     parse = argparse.ArgumentParser(description='Generation setting of gpt4o.')
     parse.add_argument('--input_file', type=str, help='The data.json of RAG-IG.', default='./data.json')
-    parse.add_argument('--output_dir', type=str, help='The path for generation result. It should be a .jsonl file.', default='./gpt4o_answer.jsonl')
+    parse.add_argument('--output_dir', type=str, help='The path for generation result. It should be a .jsonl file.', default='./gemini_answer.jsonl')
     # parse.add_argument('--images_root_path', type=str, help='The root path of images folder.', default='./images')
     parse.add_argument('--api_key', type=str, help='Keys for gemini. If GEMINI_API_KEY is set in the environment variables, you can omit this one.')
 
