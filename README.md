@@ -34,8 +34,8 @@ We have hosted the RAG-IGBench dataset on Huggingface. The format of each line i
             ...
         ],
         "images":[
-            [id/1/IMG#1, id/1/IMG#2, ...],     # images of doc#1
-            [id/2/IMG#x, id/2/IMG#x+1, ...],      # images of doc#2
+            [img_url, img_url, ...],     # images of doc#1
+            [img_url, img_url, ...],      # images of doc#2
             ...
         ],
         "gt_answer": "answer str",
