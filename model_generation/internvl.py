@@ -78,6 +78,7 @@ def main():
                     },
                     sampling_params=sampling_params
                 )
+                break
             except Exception as e:
                 print(e)
                 retry -= 1
