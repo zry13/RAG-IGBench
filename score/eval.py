@@ -42,7 +42,7 @@ def edit_distance(listA, listB):
     
     return 1 - dp[n][m] / max(m,n)
 
-def kendall_score(ordered_list, reference_list):
+def Kendall_Score(ordered_list, reference_list):
     
     reference_set = set(reference_list)
     index_map = {value: index for index, value in enumerate(reference_list)}
@@ -214,7 +214,7 @@ def main(args):
 
 
             ed_score = edit_distance(model_img_list, gt_img_list)
-            kendall_score = kendall_score(model_img_list, gt_img_list)
+            kendall_score = Kendall_Score(model_img_list, gt_img_list)
 
             # The image selection difficulty increases with the number of candidates (i.e. len(img_list)) 
             # but decreases with the number of ground truth images (i.e. len(gt_img_list)). 
@@ -263,7 +263,10 @@ def main(args):
                 else:
                     sim = (sim - 0.1) / 0.3
                 clip_score.append(sim)
-            d['clip_score'] = np.mean(clip_score)
+            if len(clip_score) > 0:
+                d['clip_score'] = np.mean(clip_score)
+            else:
+                d['clip_score'] = 0
             
 
             num += 1
@@ -295,8 +298,8 @@ def main(args):
 
 def parse_arguments():
     parse = argparse.ArgumentParser(description='Generation setting of gpt4o.')
-    parse.add_argument('input_file', type=str, help='The model answer file.')
-    parse.add_argument('output_dir', type=str, help='The path for evaluation result. It should be a .jsonl file.')
+    parse.add_argument('--input_file', type=str, help='The model answer file.')
+    parse.add_argument('--output_dir', type=str, help='The path for evaluation result. It should be a .jsonl file.')
     parse.add_argument('--clip_model_path', type=str, help='The model used to calculate Clip-Score.', default='openai/clip-vit-large-patch14')
     parse.add_argument('--embedding_model_path', type=str, help='The model used to calculate Alignment-Score.',default='TencentBAC/Conan-embedding-v1')
 
