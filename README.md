@@ -41,11 +41,13 @@ We have hosted the RAG-IGBench dataset on Huggingface. The format of each line i
             [img_url, img_url, ...],      # images of doc#2
             ...
         ],
-        "gt_answer": "answer str",
+        "gt_raw_answer": "json str",      # model-generated original answer
+        "gt_clean_answer": "answer str",      # cleaned markdown-format answer
         "category":[
             "Finance",      # topic of the query
-            "what-is"       # one of "what-is", "how-to", "yes-or-no" and "head-to-head"
-        ]
+            "what-is"       # one of "what-is", "how-to", "yes-or-no", and "head-to-head"
+        ],
+        "split": "train/dev"      # data split for training and evaluation
     }
 ]
 ```
