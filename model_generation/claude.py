@@ -131,7 +131,7 @@ def main(args):
 
 def parse_arguments():
     parse = argparse.ArgumentParser(description='Generation setting of gpt4o.')
-    parse.add_argument('--input_file', type=str, help='The data.json of RAG-IG.', default='./data.json')
+    parse.add_argument('--input_file', type=str, help='The data.jsonl of RAG-IG.', default='./data.jsonl')
     parse.add_argument('--output_dir', type=str, help='The path for generation result. It should be a .jsonl file.', default='./claude_answer.jsonl')
     # parse.add_argument('--images_root_path', type=str, help='The root path of images folder.', default='./images')
     parse.add_argument('--api_key', type=str, help='Api key for claude3.5-sonnet. If ANTHROPIC_API_KEY is set in the environment variables, you can omit this one.')
