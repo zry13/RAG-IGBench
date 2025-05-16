@@ -35,7 +35,10 @@ def main(args):
         for j, imgs in enumerate(images, start=1):
             for img_url in imgs:
                 img_counter += 1
-                saved_path = os.path.join(images_root_path, i, j, f'IMG#{img_counter}.jpg')
+                directory = os.path.join(images_root_path, str(i), str(j))
+                saved_path = os.path.join(images_root_path, str(i), str(j), f'IMG#{img_counter}.jpg')
+                if not os.path.exists(directory):
+                    os.makedirs(directory)
                 flag = download_image(img_url.replace('w/720', 'w/540').replace('w/1080', 'w/540'), saved_path)
                 if not flag:
                     error_num += 1
