@@ -21,7 +21,7 @@ The following two figures show the statistics of our RAG-IGBench:
 <div align=center><img src="assets/stat_figure.jpg"></div>
 
 ## TODO
-- [ ] Release the English version of the data.
+- [x] Release the English version of the data.
 - [x] Release the data and eval code of our Benchmark.
 
 ## 📚 Setup
