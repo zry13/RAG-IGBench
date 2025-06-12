@@ -25,7 +25,7 @@ The following two figures show the statistics of our RAG-IGBench:
 - [x] Release the data and eval code of our Benchmark.
 
 ## 📚 Setup
-We have hosted the RAG-IGBench dataset on Huggingface. The format of each line in `data.jsonl` is:
+We have hosted the RAG-IGBench dataset on Huggingface and provide two versions of the data: RAG_IG_CH and RAG_IG_EN. The Chinese version is sourced from the original social media platform, and AI translates the English version. The format of each line in `RAG_IG_CH.jsonl `and `RAG_IG_EN.json` is:
 ```
 [
     {
